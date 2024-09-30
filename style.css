@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white; 
+    height: 100vh; /* Make the body cover the full height of the viewport */
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 0px;
+    margin-left: 100px ;
+    margin-right: 100px;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
+}
