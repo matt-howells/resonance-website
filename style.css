@@ -43,6 +43,31 @@ body {
     color: white;
     white-space: nowrap;  /* Prevents text from wrapping */
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;  /* Stack items vertically */
+        padding: 10px;           /* Reduce padding */
+    }
+
+    .header-1, .header-2, .header-3 {
+        margin-left: 0;          /* Remove left margin */
+        margin-top: 10px;       /* Add top margin for spacing */
+        font-size: 16px;        /* Reduce font size */
+    }
+
+    .logo {
+        margin-right: 0;        /* Reset margin for the logo */
+        margin-bottom: 10px;    /* Add space below the logo */
+    }
+
+
+
+}
+
+
+
+
 /* Video container styling */
 .looping-video {
     display: flex;
@@ -56,8 +81,8 @@ body {
 
 video {
     max-width: 100%;
-    max-height: calc(100vh - 80px);  /* Adjust for the header height */
-    object-fit: contain;
+    height: 100%; /* Let it fill the container */
+    object-fit: cover; /* Adjust based on your needs */
 }
 
 /* EVENTS CSS */
@@ -92,7 +117,7 @@ video {
 }
 
 .upcoming-show img {
-    max-width: 500px;  /* Set a max width for responsiveness */
+    max-width: 400px;  /* Set a max width for responsiveness */
     height: auto;
     object-fit: cover;
     border-radius: 10px;
