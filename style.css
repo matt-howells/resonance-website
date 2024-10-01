@@ -1,4 +1,6 @@
-/* General body styling */
+
+/* LANDING PAGE CSS */
+
 body {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
@@ -56,4 +58,46 @@ video {
     max-width: 100%;
     max-height: calc(100vh - 80px);  /* Adjust for the header height */
     object-fit: contain;
+}
+
+/* EVENTS CSS */
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;  /* Allows the images to wrap to the next line */
+    justify-content: space-evenly;  /* Evenly spaces the images */
+    padding: 20px;
+    gap: 20px;  /* Adds space between the images */
+}
+
+/* Styling for each image */
+.gallery img {
+    max-width: 200px;  /* Set a max width for responsiveness */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 
+}
+
+/* CSS to style the clickable heading */
+.clickable-heading {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color */
+}
+
+/* Change color on hover */
+.clickable-heading:hover {
+    color: green; /* Change color when hovered */
+}
+
+.upcoming-show img {
+    max-width: 500px;  /* Set a max width for responsiveness */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* padding: 100px; */
+    
 }
