@@ -23,9 +23,14 @@ body {
     text-align: center;
     padding: 20px; 
     padding-top: 250px; 
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column
 }
 
 .code-of-conduct {
+    display: flex;
+    flex-direction: column;
     max-width: 600px; 
     word-wrap: break-word;
     margin: 0;
@@ -33,6 +38,7 @@ body {
     text-align: center;
     padding: 20px; 
     padding-top: 150px; 
+    padding-bottom: 150px;
 }
 
 
@@ -96,7 +102,7 @@ body {
 
   .footer {
         flex-direction: column;  /* Stack items vertically */
-        padding: 10px;           /* Reduce padding */
+        padding: 10px;      /* Reduce padding */
      }
 }
 
