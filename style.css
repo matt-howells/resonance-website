@@ -10,13 +10,12 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;  /* Vertically center content */
-    align-items: center;  /* Horizontally center content */
+    align-items: center;  
     margin: 0;
 }
 
 .about {
-    max-width: 600px; /* Adjust the width to your preference */
+    max-width: 600px; 
     word-wrap: break-word;
     margin: 0;
     display: flex;
@@ -24,8 +23,10 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    padding: 20px; /* Adjust for some spacing around the text */
-  }
+    padding: 20px; 
+    padding-top: 80px; 
+}
+  
 
 .header {
     display: flex;
@@ -43,7 +44,6 @@ body {
     box-sizing: border-box;  /* Ensure padding is included in the element width */
 }
 
-/* Logo on the far left */
 .logo {
     margin-right: auto;  /* Pushes the other items to the right */
 }
@@ -64,8 +64,8 @@ body {
 
     .header-1, .header-2, .header-3 {
         margin-left: 0;          /* Remove left margin */
-        margin-top: 10px;       /* Add top margin for spacing */
-        font-size: 16px;        /* Reduce font size */
+        margin-top: 5px;       /* Add top margin for spacing */
+        font-size: 12px;        /* Reduce font size */
     }
 
     .logo {
@@ -73,8 +73,7 @@ body {
         margin-bottom: 10px;    /* Add space below the logo */
     }
 
-
-
+  
 }
 
 
@@ -124,7 +123,7 @@ video {
 
 /* Change color on hover */
 .clickable-heading:hover {
-    color: green; /* Change color when hovered */
+    color: beige; /* Change color when hovered */
 }
 
 .upcoming-show img {
