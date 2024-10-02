@@ -27,6 +27,18 @@ body {
     padding: 20px; 
     padding-top: 80px; 
 }
+
+.code-of-conduct {
+    max-width: 600px; 
+    word-wrap: break-word;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    padding: 20px; 
+    padding-top: 150px; 
+}
+
+
   
 
 .header {
