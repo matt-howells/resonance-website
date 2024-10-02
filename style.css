@@ -45,6 +45,16 @@ body {
     box-sizing: border-box;  /* Ensure padding is included in the element width */
 }
 
+.footer  {
+    width: 100%;              /* Make footer take full width of the page */
+    display: flex;
+    justify-content: space-between; /* Space out items to the far left and right */
+    align-items: center;      /* Align items vertically in the center */
+    padding: 20px 50px; 
+    list-style: none;
+    box-sizing: border-box;
+}
+
 .logo {
     margin-right: auto;  /* Pushes the other items to the right */
 }
