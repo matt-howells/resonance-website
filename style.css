@@ -97,7 +97,10 @@ body {
         margin-bottom: 10px;    /* Add space below the logo */
     }
 
-  
+  .footer {
+        flex-direction: column;  /* Stack items vertically */
+        padding: 10px;           /* Reduce padding */
+     }
 }
 
 
