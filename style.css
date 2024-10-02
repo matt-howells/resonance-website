@@ -1,6 +1,19 @@
 
 /* LANDING PAGE CSS */
 
+
+.ac {
+  
+        min-width: 550px;
+        position: relative;
+        
+}
+
+.ccc {
+    min-width: 550px;
+    position: relative;
+}
+
 body {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
