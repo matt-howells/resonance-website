@@ -95,7 +95,59 @@ body {
     color: white;
     white-space: nowrap;  /* Prevents text from wrapping */
 }
+.header-4 a {
+  color: #fff;
+  font-weight: bold;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.6),
+    0 0 12px rgba(180, 180, 255, 0.4);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  animation: shimmer 5s infinite alternate, softPulse 3s ease-in-out infinite;
+}
 
+/* Subtle shimmer animation */
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(150, 150, 255, 0.3);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(200, 200, 255, 0.6),
+      0 0 30px rgba(180, 180, 255, 0.4);
+  }
+}
+
+/* Soft breathing glow */
+@keyframes softPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Hover effect */
+.header-4 a:hover {
+  transform: scale(1.5);
+  color: #fffff0;
+  text-shadow:
+    0 0 15px rgba(255, 255, 255, 1),
+    0 0 25px rgba(255, 200, 255, 0.7),
+    0 0 35px rgba(180, 180, 255, 0.5);
+}
+
+/* Click interaction */
+.header-4 a:active {
+  animation: clickPulse 0.3s ease-in-out;
+}
 @media (max-width: 768px) {
     .header {
         flex-direction: column;  /* Stack items vertically */
@@ -107,6 +159,8 @@ body {
         margin-top: 5px;       /* Add top margin for spacing */
         font-size: 12px;        /* Reduce font size */
     }
+
+    
 
     .logo {
         margin-right: 0;        /* Reset margin for the logo */
@@ -182,4 +236,52 @@ video {
     padding-bottom: 200px;
     /* padding: 100px; */
     
+}
+
+.series-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.event-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.event img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.event-video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (min-width: 700px) {
+  .event-feature {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .event {
+    width: 48%;
+  }
+}
+
+
+.footer-logo {
+  height: 50px;                /* Keeps them a uniform height */
+  width: auto;                 /* Prevents stretching */
+  max-width: 200px;            /* Caps extra-wide logos */
+  object-fit: contain;
+  display: block;
+  padding: 4px 0;              /* Optional spacing for breathing room */
 }
